@@ -1,0 +1,129 @@
+.coinImage {
+  width: 300px;
+  height: 300px;
+}
+
+.info {
+  background-color: #E1E1E1;
+  padding: 19px 43px;
+  width: 452px;
+  height: 650px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 29px;
+}
+
+.coinDetails {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.coinImage {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.span {
+  text-decoration: underline;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.coinTable {
+  width: 366px;
+  height: 140px;
+  border-collapse: collapse;
+}
+
+.coinTable td {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.coinTable tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+.coinTable tr:nth-child(even) {
+  background-color: #E1E1E1;
+}
+
+.coinTable td:first-child {
+  width: 300px;
+}
+
+.coinTable td:nth-child(2) {
+  width: 300px;
+}
+
+.title {
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .info {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+
+  .coinTable {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .coinImage {
+    width: 180px;
+    height: 180px;
+  }
+
+  .coinDetails {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .coinTable td {
+    padding: 6px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .coinImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .info {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+
+  .coinTable {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .coinDetails {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .coinTable td {
+    padding: 4px 8px;
+  }
+}

@@ -1,0 +1,99 @@
+.title {
+    font-size: 50px;
+    font-family: Roboto;
+    font-weight: 200;
+    margin-bottom: 10%;
+}
+
+.container {
+    margin-left: 52px;
+    margin-right: 52px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 100%; 
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login, .password {
+    display: flex;
+    flex-direction: column;
+}
+
+.warn {
+    font-size: 14px;
+    color: silver;
+}
+
+.password input {
+    margin-bottom: 0px;
+}
+
+.message {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 35px; 
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px; 
+    }
+
+    input {
+        width: 100%; 
+    }
+
+    .buttons {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 30px; 
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    input {
+        font-size: 14px; 
+        padding: 8px;
+    }
+
+    .buttons {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 15px; 
+    }
+
+    .message {
+        font-size: 10px; 
+    }
+}

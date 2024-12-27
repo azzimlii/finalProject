@@ -1,0 +1,165 @@
+.title {
+    font-size: 50px;
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 20px 52px;
+}
+
+.coins {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 214px;
+    height: 214px;
+    margin-right: 20px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name {
+    color: #833AE0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.right p {
+    width: 300px;
+    margin-top: 0px;
+}
+
+.type {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    background-color: #E5E5E5;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d3d3d3;
+}
+
+.add {
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.add:hover {
+    color: #0056b3;
+}
+
+.adding {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.buttons {
+    margin-right: 30%;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+    .coins {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+    .right p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .container {
+        margin: 10px 20px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .adding {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .container {
+        margin: 10px;
+    }
+
+    .img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .right p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .adding {
+        gap: 5px;
+    }
+
+    .btn {
+        width: 80px;
+        height: 30px;
+    }
+
+    .buttons {
+        margin-right: 0;
+        text-align: center;
+    }
+}

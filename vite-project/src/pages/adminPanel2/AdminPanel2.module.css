@@ -1,0 +1,140 @@
+.admin2 {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  margin-left: 52px;
+  overflow: hidden;
+}
+
+.h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.leftColumn,
+.middleColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font-size: 14px;
+  width: 100%; 
+  max-width: 374px; 
+  height: 48px;
+  margin: 0px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.save, .cancel {
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: silver;
+  color: black;
+}
+
+.save:hover {
+  background-color: #3700b3;
+}
+
+.cancel:hover {
+  background-color: #999;
+}
+.message{
+  color:red;
+}
+@media screen and (max-width: 1024px) {
+  .leftColumn,
+  .middleColumn,
+  .rightColumn {
+    margin-right: 20px;
+  }
+
+  input,
+  textarea {
+    max-width: 300px;
+    font-size: 12px; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leftColumn,
+  .middleColumn,
+  .rightColumn {
+    margin-right: 10px;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  input,
+  textarea {
+    max-width: 250px;
+    height: 40px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .admin2 {
+    margin-left: 10px; 
+  }
+
+  .h1 {
+    font-size: 30px;
+    text-align: center; 
+  }
+  .leftColumn,
+  .middleColumn,
+  .rightColumn {
+    margin-right: 0;
+    flex-direction: column; 
+  }
+
+  input,
+  textarea {
+    width: 100%; 
+    max-width: 100%;
+    height: 36px; 
+  }
+
+  .buttons {
+    position: static; 
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .save, .cancel {
+    width: 100px; 
+    margin: 0 5px;
+  }
+}

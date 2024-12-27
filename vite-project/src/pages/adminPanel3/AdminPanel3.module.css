@@ -1,0 +1,88 @@
+.admin3 {
+  margin: 0 ;
+  font-family: Roboto, sans-serif;
+  margin-left: 52px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.leftColumn,
+.middleColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+margin-right: 40px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font-size: 14px;
+  width: 374px;
+  height: 48px;
+  margin: 0px;
+}
+
+.buttons{
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+}
+textarea {
+  height: 100px;
+}
+
+.downloads{
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.save, .cancel {
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: silver;
+  color: black;
+  
+}
+
+.save:hover {
+  background-color: #3700b3;
+}
+
+.cancel:hover {
+  background-color: #999;
+}
+.img {
+    width: 120px;
+    height: 120px;
+}
+.formGroupImg{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 36px;
+    margin-top: 20px;
+}

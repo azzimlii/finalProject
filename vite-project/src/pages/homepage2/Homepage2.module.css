@@ -1,0 +1,146 @@
+.inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+select {
+    width: 374px;
+    height: 48px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    margin-left: 52px;
+}
+
+.right input {
+    width: 155px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.right span {
+    margin-top: 15px;
+}
+
+.right label {
+    margin: 0px;
+}
+
+.rightSide {
+    margin-top: 25px;
+}
+
+.first {
+    margin-bottom: 20px;
+}
+
+.advanced {
+    text-decoration: underline;
+    margin-right: 5px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.filter {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+* {
+    font-family: Roboto;
+}
+
+input {
+    width: 374px;
+    height: 48px;
+}
+
+button {
+    width: 120px;
+    height: 52px;
+    background-color: #833AE0;
+    color: white;
+    margin-left: 30px;
+    border: none;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs {
+        width: 100%;
+        align-items: center;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .right input {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .filter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightSide {
+        margin-top: 5px;
+    }
+
+    .first {
+        margin-bottom: 5px;
+    }
+}
